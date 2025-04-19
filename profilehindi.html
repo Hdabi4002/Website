@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>उपयोगकर्ता प्रोफ़ाइल</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <a href="homepagehindi.html">मुखपृष्ठ पर वापस जाएं</a>
+      <h2 style="margin-left: auto; margin-right: auto;">उपयोगकर्ता प्रोफ़ाइल</h2>
+    </div>
+  </header>
+
+  <section style="padding: 30px; max-width: 600px; margin: auto;">
+    <h2>उपयोगकर्ता खाता विवरण</h2>
+    <form id="userProfileForm">
+      <label>नाम:</label><br/>
+      <input type="text" id="userName" value="हबीबा क़मर"><br/><br/>
+
+      <label>ईमेल:</label><br/>
+      <input type="email" id="userEmail" value="habibah@example.com"><br/><br/>
+
+      <label>फ़ोन:</label><br/>
+      <input type="tel" id="userPhone" value="123-456-7890"><br/><br/>
+
+      <label>पता:</label><br/>
+      <textarea id="userAddress">123 सेफ स्ट्रीट, सिक्योर सिटी</textarea><br/><br/>
+
+      <button type="button" onclick="updateProfile()">जानकारी अपडेट करें</button>
+    </form>
+
+    <p id="updateMessage" style="color: green; font-weight: bold;"></p>
+  </section>
+
+  <script>
+    function updateProfile() {
+      document.getElementById('updateMessage').innerText = 'प्रोफ़ाइल सफलतापूर्वक अपडेट हो गई!';
+    }
+  </script>
+</body>
+</html>

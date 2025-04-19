@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Women Safety Management</title>
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <a href="#tipsandprecaution">Tips & Precautions</a>
+      <a href="#emergencysiren" id="emergencyTab">Emergency Siren</a>
+      <a href="#sosalert">SOS Alert</a>
+      <a href="#mindrelaxingexercises">Mind-Relaxing Exercises</a>
+      <a href="#reportincident">Incident Report</a>      
+    </div>
+  </header>
+
+  <audio id="emergencySound" src="alertsiren.mp3" preload="auto"></audio>
+
+  <section id="home" class="parallax" style="background-color: #f8b0da; background-position: center; background-size: cover; background-attachment: fixed; position: relative;">
+    <div class="parallax-text">
+        <img src="LOGO.png" class="main-logo" width="600" height="300" />
+        <p style="font-weight: bold; font-size: 1.0rem;">This website offers a range of services to protect women and ensure their safety.</p>
+        <p style="font-size: 0.8rem;">You can view and update your user profile by clicking on the profile-icon at the bottom of this page.</p>
+      </div>
+</section>
+
+  <section id="tipsandprecaution" class="parallax" >
+    <div class="parallax-text" style="max-width: 600px;">
+      <img src="savewom.png" style="width: 320px; height: 220px; margin: 0px auto 3px auto; justify-content: center;display: flex;align-items: center;" />
+      <h2 style="justify-content: center;display: flex;align-items: center;">TIPS AND PRECAUTIONS</h2>
+      <p style="font-weight: bold; font-size: 1.2rem;">Follow below tips & precautions to safe yourself:</p><br/>
+      <p style="text-align: left;">
+        <img src="bulleticon.png"/> Stay aware of your surroundings.<br>
+        <img src="bulleticon.png"/> Avoid using headphones or earbuds in public.<br>
+        <img src="bulleticon.png"/> Use well-lit and populated routes.<br>
+        <img src="bulleticon.png"/> Be cautious about sharing your personal information.<br>
+        <img src="bulleticon.png"/> Carry some safety tools such as pepper spray, small knife.<br>
+        <img src="bulleticon.png"/> Keep your phone fully charged and accessible.<br>
+        <img src="bulleticon.png"/> Avoid walking or travelling alone at night.<br>
+      </p>
+    </div>
+  </section>
+  
+
+  <section id="sosalert" class="parallax" style="background-color: #f8b0da;background-position: center;background-size: cover;background-attachment: fixed;">
+    <div class="parallax-text">
+      <img src="alertmsg.png" style="width: 190px; height: 140px; margin: 0px auto 3px auto;" />
+      <h2>SEND ALERT</h2><br/>
+      <p id="headline" style="font-size: 1.2rem;">Enter Your Emergency Contacts:</p>
+  
+      <div id="contactFields">
+        <input type="text" class="contact-input" id="contactsInput" style="width: 100%;" placeholder="Enter contacts separated by commas,">
+      </div>
+  
+      <button id="addContactBtn">Add Contacts</button>
+  
+      <button id="sendAlertBtn">Send Alert</button>
+  
+      <div class="contacts-list" id="contactsList">
+        <h3>Added Contacts:</h3>
+        <ul id="contactListUl">
+          <!-- Contacts will be displayed here -->
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="mindrelaxingexercises" class="parallax" style="background-color: white; background-position: center; background-size: cover; background-attachment: fixed; display: flex; justify-content: center; align-items: center; padding: 60px 0;">
+    <div class="parallax-text" style="text-align: center;">
+        <img src="powerwom.png" style="width: 190px; height: 140px; margin: 0 auto 20px auto; display: block;" />
+        <h2 style="margin: 10px 0;">MIND RELAXING EXERCISES</h2>
+        <p style="margin-bottom: 20px;">Explore relaxing exercises to<br/> calm your mind in stressful situations.</p>
+
+        <div style="display: flex; gap: 25px; border: 1px solid #6d6b6b; padding: 10px; box-sizing: border-box; font-size: 1.2rem; flex-wrap: wrap;">
+            <!-- Video Column -->
+            <div style="flex: 1; min-width: 300px; max-width: 480px; padding: 10px;">
+                <div class="video-container" style="display: flex; justify-content: center; width:300px;height: 200px;">
+                    <video controls width="100%" height="auto">
+                        <source src="BreatheEng.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- Text Column -->
+            <div style="flex: 1; min-width: 300px; max-width: 480px; padding: 10px;">
+                <p>
+                    <h2 style="color: #ad0000;">Deep Breathing</h2>
+                    ---How to do it:<br/>
+                    <p style="text-align: left; justify-content: left;">
+                        Step 1- Inhale for 4 seconds.<br/>
+                        Step 2- Hold your breath for 4 seconds.<br/>
+                        Step 3- Exhale slowly for 4 seconds.<br/>
+                        Hold again for 4 seconds.<br/>
+                        Repeat: 4-5 rounds.<br/>
+                        <b>---Why: Helps activate the parasympathetic nervous system (aka the chill mode).</b><br/>
+                    </p>
+                </p><br/>
+            </div>
+        </div>
+
+        <h2>MORE EXERCISES:</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            <!-- Column 1: -->
+            <div style="flex: 1; min-width: 300px; max-width: 480px; padding: 10px; border: 1px solid #6d6b6b; padding: 10px; box-sizing: border-box;">
+              <p>
+                  <img width="100%" height="auto" src="Groundingimg.png"/>
+                  <h2 style="color: #ad0000;">5-4-3-2-1 Grounding</h2>
+                  ---How to do it:<br/>
+                  <p style="text-align: left; justify-content: left;">
+                      Step 1- Name 5 things you can see<br/>
+                      Step 2- Name 4 things you can touch<br/>
+                      Step 3- Name 3 things you can hear<br/>
+                      Step 4- Name 2 things you can smell<br/>
+                      Step 5- Name 1 thing you can taste<br/>
+                      <b>---Why: Anchors you to the present moment.</b><br/>
+                  </p>
+              </p>
+          </div>
+            <!-- Column 2: -->
+            <div style="flex: 1; min-width: 300px; max-width: 480px; padding: 10px; border: 1px solid #6d6b6b; padding: 10px; box-sizing: border-box;">
+                <p>
+                    <img width="230px" height="210px" src="Journalingimg.png"/>
+                    <h2 style="color: #ad0000;">Journaling</h2>
+                    ---How to do it:<br/>
+                    <p style="text-align: left; justify-content: left;">
+                        Step 1- Set a timer for 5-10 minutes.<br/>
+                        Step 2- Write whatever comes to mind—no filter, no structure.<br/>
+                        <b>---Why: Helps clear mental clutter and reduce overthinking.</b><br/>
+                    </p>
+                </p>
+            </div>
+        </div>
+        <br/>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+            <!-- Column 1: -->
+            <div style="flex: 1; min-width: 300px; max-width: 480px; padding: 10px; border: 1px solid #6d6b6b; padding: 10px; box-sizing: border-box;">
+              <p>
+                  <img width="210px" height="90px" src="Visualizationimg.png"/>
+                  <h2 style="color: #ad0000;">Visualization</h2>
+                  ---How to do it:<br/>
+                  <p style="text-align: left; justify-content: left;">
+                      Step 1- Close your eyes and imagine a calming place (beach, forest, mountain).<br/>
+                      Step 2- Engage your senses: What do you see? Hear? Smell?<br/>
+                      Time: 5 minutes.<br/>
+                      <b>---Why: The brain responds to imagery almost like real experiences—great for mental escape.</b><br/>
+                  </p>
+              </p>
+          </div>
+
+            <!-- Column 2: -->
+            <div style="flex: 1; min-width: 300px; max-width: 480px; padding: 10px; border: 1px solid #6d6b6b; padding: 10px; box-sizing: border-box;">
+                <p>
+                    <img width="250px" height="150px" src="Candleimg.png"/>
+                    <h2 style="color: #ad0000;">Candle Gazing Meditation</h2>
+                    ---How to do it:<br/>
+                    <p style="text-align: left; justify-content: left;">
+                        Step 1- Light a candle and place it at eye level, about 2-3 feet away.<br/>
+                        Step 2- Sit comfortably with your spine straight.<br/>
+                        Step 3- Gaze softly at the flame without blinking, just observing.<br/>
+                        Step 4- When your eyes feel tired, close them and visualize the flame in your mind.<br/>
+                        Repeat for 5-10 minutes.<br/>
+                        <b>---Why it works: Calms the mind, improves focus, and reduces mental chatter.</b><br/>
+                    </p>
+                    <i>~Bonus: It's great for eye health and sleep prep.</i><br/>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+  
+  <section id="reportincident" class="parallax" style="background-color: #f8b0da;background-position: center;background-size: cover;background-attachment: fixed;">
+    <div class="parallax-text">
+      <img src="reportmail.png" style="width: 240px; height: 190px; margin: 0px auto 3px auto;" />
+      <h2>SEND INCIDENT REPORT</h2><br/>
+  
+      <div id="writereport">
+        <input type="text" class="report-input" id="reportInput" placeholder="Enter the details of the incident here...">
+      </div>
+  
+      <button id="sendMailBtn">Send Email</button>
+      
+    </div>
+  </section>
+
+  <div class="profile-icon-container" style="position: relative; width: 100%; height: 100%;">
+    <a href="profile.html" title="View Profile" 
+       style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+      <img src="ProfileIcon.png" alt="Profile" class="profile-icon" width="80" height="60">
+    </a>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 WSM | Women Safety Management | All Rights Reserved | Designed and Developed by Habibah Qamar</p>
+  </footer>
+
+  <script src="homepage.js"></script>
+  
+</body>
+</html>
+  

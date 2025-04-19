@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <a href="homepage.html">Back to Home</a>
+      <h2 style="margin-left: auto; margin-right: auto;">User Profile</h2>
+    </div>
+  </header>
+
+  <section style="padding: 30px; max-width: 600px; margin: auto;">
+    <h2>User Account Details</h2>
+    <form id="userProfileForm">
+      <label>Name:</label><br/>
+      <input type="text" id="userName" value="Habibah Qamar"><br/><br/>
+
+      <label>Email:</label><br/>
+      <input type="email" id="userEmail" value="habibah@example.com"><br/><br/>
+
+      <label>Phone:</label><br/>
+      <input type="tel" id="userPhone" value="123-456-7890"><br/><br/>
+
+      <label>Address:</label><br/>
+      <textarea id="userAddress">123 Safe Street, Secure City</textarea><br/><br/>
+
+      <button type="button" onclick="updateProfile()">Update Info</button>
+    </form>
+
+    <p id="updateMessage" style="color: green; font-weight: bold;"></p>
+  </section>
+
+  <script>
+    function updateProfile() {
+      document.getElementById('updateMessage').innerText = 'Profile updated successfully!';
+    }
+  </script>
+</body>
+</html>
